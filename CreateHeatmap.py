@@ -38,7 +38,7 @@ def create_graph(filepath_list: list, target_col: str, sampling_rate: str, graph
             layer="below")
     )
     fig.write_html(output_filepath + '.html', auto_open=False)
-    fig.write_image(output_filepath + '.png', width=1920, height=1080)
+    fig.write_image(output_filepath + '.png', format='png',  width=1920, height=1080)
     fig.show()
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ datetime_list = []
 
 time = datetime.datetime.strptime('2020-12-20 13:30:30', '%Y-%m-%d %H:%M:%S')
 
-for i in range(1280000):
+for i in range(64000):
     datetime_list.append(time)
     signal_level_list.append(np.random.uniform(-120, 10))
     time = time + datetime.timedelta(milliseconds=np.random.uniform(50, 100))
